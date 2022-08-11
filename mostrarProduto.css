@@ -1,0 +1,40 @@
+section.produto div.produto__caneca img {
+    width: 100%;
+}
+section.produto p {
+    margin: 20px;
+}
+section.produto div.produto__caneca h2 {
+    margin: 20px;
+}
+div.produtos__similares {
+    margin: 20px;
+}
+@media (min-width: 768px) {
+    section.produto div.produto__caneca img {
+        width: 254px;
+        height: 157px;
+        margin: 10px;
+    } 
+    section.produto div.produto__caneca {
+        display: flex;
+    }
+       
+}
+@media (min-width: 1440px) {
+  
+    section.produto div.produto__caneca img {
+        width: 560px;
+        height: 403px;
+        margin: 10px;
+    } 
+    section.produto div.produto__caneca {
+        display: flex;
+        align-items: center;
+    }
+    
+div.produtos__holder.mobileno {
+    display: block;
+}
+       
+}

@@ -1,0 +1,38 @@
+header nav div.logo-busca .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--cor-de-fundo-cabecalho);
+    
+}
+header nav .logo-busca .logo img {
+    width: 120px;
+    margin: 25px 52px;
+}
+header .logo-busca .logo .vetor{
+    width: 20px;
+}
+ div.iniciar__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form.iniciar__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form.iniciar__login input {
+    width: 275px;
+    height: 41px;
+    margin-bottom: 10px;
+}
+form.iniciar__login button {
+    width: 109px;
+    height: 40px;
+    background-color: var(--cor-de-botoes);
+    color: var(--cor-de-fundo-cabecalho);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,12 @@
+div.titulo {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+div.titulo button {
+    width: 163px;
+    height: 40px;
+    background-color: var(--cor-de-botoes);
+    color: #FFFF;
+    border-radius: 10px;
+}

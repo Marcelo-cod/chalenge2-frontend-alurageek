@@ -1,0 +1,215 @@
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-cabecalho: #FFFFFF;
+    --cor-de-link: #2A7AE4;
+    --color-titulos: #FFFFFF;
+    --color-titulos-produtos: #464646;
+    --color-fundo-azul: #EAF2FD; 
+    --color-caixas: #d5e2eb;
+    --cor-de-botoes: #2a7ae4;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--cor-de-fundo-cabecalho);
+    
+}
+header .logo-busca .logo img {
+    width: 120px;
+}
+header .logo-busca input{
+    display: none;
+}
+header button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid var(--cor-de-botoes);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    color: var(--cor-de-botoes);
+    background: var(--cor-de-fundo-cabecalho);
+    margin: 20px;
+    
+}
+header button:hover{
+    background: var(--color-fundo-azul) ;
+}
+header .vetor {
+    width: 15px;
+    height: 15px;
+    
+   
+}
+/* Seção destaque */
+section.destaque {
+    width: 100%;
+    height: 192px;
+    background-image: url(assets/banner.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+section.destaque .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 82px 15px;
+    line-height: 0px;
+    font-size: 12px;
+    color: var(--color-titulos) ;
+}
+ section.destaque button{
+    width: 127px;
+    height: 42px;
+    color: var(--cor-de-fundo-cabecalho);
+    border-radius: 10px;
+    background: #2A7AE4;
+}
+section.produtos-geral  {
+    display: flex;
+    flex-direction: column;
+}
+div.produtos__titulo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+div.produtos__titulo h3 {
+    font-weight: bolder;
+    font-size: 20px;
+   
+}
+section.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+}
+
+div.produtos__holder.mobileno {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-fundo-azul);
+    padding: 10px;
+}
+
+form.fale__conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.fale__conosco .fale__conosco__nome {
+    padding: 10px;
+    width: 328px;
+    height: 56px;
+    margin-bottom: 10px;
+}
+.fale__conosco .fale__conosco__mensagem {
+    padding: 10px;
+    width: 328px;
+    height: 82px;
+    margin-bottom: 10px;
+}
+.fale__conosco .fale__conosco__botao {
+    width: 151px;
+    height: 40px;
+    background-color: var(--cor-de-botoes);
+    border-radius: 10px;
+    color: var(--cor-de-fundo-cabecalho);
+}
+
+div.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-de-fundo-cabecalho);
+    line-height: 1px;
+    
+    
+
+}
+@media (min-width: 768px) {
+    header .logo-busca input {
+        width: 272px;
+        height: 30px;
+        background-image: url(assets/lupa.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        display: block;
+        border-radius: 10px;
+        background-color : var(--cor-de-fundo);
+        margin: 20px;
+        padding: 4px 6px;
+    }
+    div.logo img.vetor {
+        display: none;
+    }
+    footer {
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px;
+    }
+    div.formulario form.fale__conosco input {
+        width: 434px;
+        height: 36px;
+    }
+    div.formulario form.fale__conosco textarea {
+        width: 434px;
+        height: 62px;
+    }
+}
+@media (min-width: 1440px) {
+    div.login img.vetor {
+        display: none;
+    }
+    section.destaque div.banner h1 {
+        font-size: 52px;
+        margin-left: 150px;
+        margin-top: 100px;
+        
+
+    }
+    section.destaque div.banner h4 {
+        font-size: 22px;
+        margin-left: 150px;
+        
+    }
+    section.destaque div.banner button {
+        width: 130px;
+        height: 51px;
+        margin-left: 150px;
+        
+    }
+    section.destaque {
+        
+        height: 352px;
+    }
+}
